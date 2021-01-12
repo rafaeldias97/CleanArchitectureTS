@@ -1,0 +1,36 @@
+[
+    {
+        "type": "A",
+        "exercices": [
+            {
+                "id": 1,
+                "name": "Supino Reto",
+                "code": "NVHD-DL"
+            },
+            {
+                "id": 2,
+                "name": "Supino Inclinado",
+                "code": "NVHH-DL"
+            }
+        ],
+        "personalId": 1,
+        "clientId": 1
+    },
+    {
+        "type": "B",
+        "exercices": [
+            {
+                "id": 1,
+                "name": "Supino",
+                "code": "NVHD-DL"
+            },
+            {
+                "id": 2,
+                "name": "Supino",
+                "code": "NVHD-DL"
+            }
+        ],
+        "personalId": 1,
+        "clientId": 1
+    }
+]

@@ -1,0 +1,25 @@
+{
+    "id": 1,
+    "name": "Rafael Dias",
+    "idade": 23,
+    "medidas": {
+        "altura": 1.80,
+        "peso": 74.0,
+        "bf": 5,
+        "additional": {
+            "chest": 0,
+            "neck": 0,
+            "arm": 0,
+            "forearm": 0,
+            "waist": 0,
+            "hips": 0,
+            "calf": 0
+        }
+    },
+    "fotos": [
+        {
+            "data": "2021-03-11T00:00:00",
+            "url": "https://www.greatestphysiques.com/wp-content/uploads/2019/04/Renato-Cariani.09.jpg"
+        }
+    ]
+}
