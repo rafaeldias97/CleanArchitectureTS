@@ -9,7 +9,7 @@ export class MachineController implements Controller {
     constructor (private readonly createMachine: CreateMachine) {
         
     }
-    async handle (): Promise<HttpResponse<CreateMachineViewModel>> {
+    async handle (req): Promise<HttpResponse<CreateMachineViewModel>> {
         try {
             const _ranking = await this.createMachine.create({id: 0, name: 'Rafae;', code: 'TESTE' })
             return ok(_ranking)
