@@ -1,1 +1,1 @@
-export * from './fake-machine-repository';
+export * from "./fake-machine-repository";

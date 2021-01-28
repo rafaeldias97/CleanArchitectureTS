@@ -1,6 +1,3 @@
-import { MachineModel } from "@/data/models";
-import { CreateMachineService } from "@/data/services/create-machine-service";
-import { Machine } from "@/domain/entities";
 import { CreateMachine } from "@/domain/usecases";
 import { Controller, HttpResponse, ok, serverError } from "@/presentation/contracts";
 import { CreateMachineViewModel } from "@/presentation/view-models";

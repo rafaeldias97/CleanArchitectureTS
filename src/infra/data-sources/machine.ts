@@ -1,5 +1,5 @@
 export const machine = {
-    "id": 1,
-    "name": "Supino",
-    "code": "NVHD-DL"
-}
+  id: 1,
+  name: "Supino",
+  code: "NVHD-DL",
+};
