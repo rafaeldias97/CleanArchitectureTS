@@ -1,4 +1,4 @@
-import { Machine } from "@/domain/entities/machine";
+import { Machine } from '@/domain/entities/machine';
 
 export type Train = {
   type: string;

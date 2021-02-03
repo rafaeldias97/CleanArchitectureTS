@@ -1,3 +1,3 @@
-import { Machine } from "@/domain/entities";
+import { Machine } from '@/domain/entities';
 
-export type MachineModel = Machine
+export type MachineModel = Machine;

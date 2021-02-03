@@ -1,7 +1,7 @@
-import { CreateClientService } from "@/data/services";
-import { FakeClientRepository } from "@/infra/repositories";
-import { ClientController } from "@/presentation/controllers";
-import { Controller } from "@/presentation/contracts";
+import { CreateClientService } from '@/data/services';
+import { FakeClientRepository } from '@/infra/repositories';
+import { ClientController } from '@/presentation/controllers';
+import { Controller } from '@/presentation/contracts';
 
 export const makeClientController = (): Controller => {
   const repo = new FakeClientRepository();

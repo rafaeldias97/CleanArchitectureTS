@@ -1,3 +1,3 @@
-import { Client } from "@/domain/entities";
+import { Client } from '@/domain/entities';
 
 export type ClientModel = Client;

@@ -1,19 +1,20 @@
-import { CreateClient } from "@/domain/usecases";
+import { CreateClient } from '@/domain/usecases';
 import {
   Controller,
   HttpResponse,
   ok,
   serverError,
-} from "@/presentation/contracts";
-import { CreateClientViewModel } from "@/presentation/view-models";
+} from '@/presentation/contracts';
+import { CreateClientViewModel } from '@/presentation/view-models';
 
 export class ClientController implements Controller {
   constructor(private readonly createClient: CreateClient) {}
+
   async handle(req): Promise<HttpResponse<CreateClientViewModel>> {
     try {
-      const _ranking = await this.createClient.create({
+      const client = await this.createClient.create({
         id: 1,
-        name: "Rafael Dias",
+        name: 'Rafael Dias',
         age: 23,
         measures: [
           {
@@ -36,11 +37,11 @@ export class ClientController implements Controller {
           {
             date: new Date(),
             url:
-              "https://www.greatestphysiques.com/wp-content/uploads/2019/04/Renato-Cariani.09.jpg",
+              'https://www.greatestphysiques.com/wp-content/uploads/2019/04/Renato-Cariani.09.jpg',
           },
         ],
       });
-      return ok(_ranking);
+      return ok(client);
     } catch (error) {
       return serverError(error);
     }

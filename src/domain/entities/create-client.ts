@@ -1,19 +1,3 @@
-export type CreateClientViewModel = {
-  id: number;
-  name: string;
-  age: number;
-  weight: CreateMeasureViewModel[];
-  photos: CreatePhotographViewModel[];
-};
-
-type CreateMeasureViewModel = {
-  height: number;
-  weight: number;
-  bf: number;
-  additional: CreateAdditionalMeasureViewModel;
-  date: Date;
-};
-
 type CreateAdditionalMeasureViewModel = {
   chest: number;
   neck: number;
@@ -27,4 +11,20 @@ type CreateAdditionalMeasureViewModel = {
 type CreatePhotographViewModel = {
   date: Date;
   url: string;
+};
+
+type CreateMeasureViewModel = {
+  height: number;
+  weight: number;
+  bf: number;
+  additional: CreateAdditionalMeasureViewModel;
+  date: Date;
+};
+
+export type CreateClientViewModel = {
+  id: number;
+  name: string;
+  age: number;
+  weight: CreateMeasureViewModel[];
+  photos: CreatePhotographViewModel[];
 };

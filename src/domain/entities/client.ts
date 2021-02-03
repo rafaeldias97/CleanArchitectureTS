@@ -1,19 +1,3 @@
-export type Client = {
-  id: number;
-  name: string;
-  age: number;
-  measures: Measure[];
-  photos: Photograph[];
-};
-
-type Measure = {
-  height: number;
-  weight: number;
-  bf: number;
-  additional: AdditionalMeasure;
-  date: Date;
-};
-
 type AdditionalMeasure = {
   chest: number;
   neck: number;
@@ -27,4 +11,20 @@ type AdditionalMeasure = {
 type Photograph = {
   date: Date;
   url: string;
+};
+
+type Measure = {
+  height: number;
+  weight: number;
+  bf: number;
+  additional: AdditionalMeasure;
+  date: Date;
+};
+
+export type Client = {
+  id: number;
+  name: string;
+  age: number;
+  measures: Measure[];
+  photos: Photograph[];
 };
